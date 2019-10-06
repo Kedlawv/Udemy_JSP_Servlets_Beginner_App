@@ -15,6 +15,7 @@
   <a href="helloworld.jsp"><h2>Hello World with Date</h2></a>
   <a href="jsp_Expressions.jsp"><h2>JSP expressions</h2></a>
   <a href="jsp_scriptlet.jsp"><h2>JSP Scriplet</h2></a>
+  <a href="fun-test.jsp"><h2>External class call / FunUtils</h2></a>
 
   </body>
 </html>
