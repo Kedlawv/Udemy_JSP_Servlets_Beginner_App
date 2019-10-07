@@ -1,11 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Wolfman
-  Date: 05/10/2019
-  Time: 12:46
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
     <title>Course links</title>
@@ -17,6 +9,9 @@
   <a href="jsp_scriptlet.jsp"><h2>JSP Scriplet</h2></a>
   <a href="fun-test.jsp"><h2>External class call / FunUtils</h2></a>
   <a href="builtin_test.jsp"><h2>JSP Built-in objects</h2></a>
+  <a href="homepage.jsp"><h2>JSP included files</h2></a>
+  <a href="student_form.html"><h2>Form Submit</h2></a>
+
 
   </body>
 </html>
