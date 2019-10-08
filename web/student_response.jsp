@@ -11,8 +11,25 @@
     <title>Student Response</title>
 </head>
 <body>
-    The student is confirmed: ${param.firstName} <!-- shortcut but only for displaying -->
-    <%= request.getParameter("lastName")%>
+The student is confirmed: ${param.firstName} <!-- shortcut but only for displaying -->
+<%= request.getParameter("lastName")%>
+<br/>
+
+The student's country: ${param.country}
+<br/>
+The students favorite language: ${param.favorite_language}
+<br/><br/>
+
+Frameworks:
+<ul>
+    <%
+        String[] frmwks = request.getParameterValues("frameworks");
+        for(String s : frmwks){
+            out.println("<li>" + s + "</li>");
+        }
+    %>
+</ul>
+
 
 </body>
 </html>

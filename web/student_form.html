@@ -1,11 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Wolfman
-  Date: 07/10/2019
-  Time: 11:22
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Student Form</title>
@@ -15,6 +8,28 @@
 <form action="student_response.jsp"> <!-- action refers to where to send the form data -->
     First name: <input type="text" name="firstName"> <br/> <!--name is what the field data will be called when passed by request object -->
     Last name: <input type="text" name="lastName"><br/>
+
+    <select name="country">
+        <option>India</option>
+        <option>Ukraine</option>
+        <option>Austria</option>
+        <option>United Kingdom</option>
+    </select>
+    <br/>
+
+    <input type="radio" name="favorite_language" value="Java">Java
+    <input type="radio" name="favorite_language" value="PHP">PHP
+    <input type="radio" name="favorite_language" value="Ruby">Ruby
+    <input type="radio" name="favorite_language" value="C#">C#
+
+    <br/>
+
+    <input type="checkbox" name="frameworks" value="Spring"> Spring
+    <input type="checkbox" name="frameworks" value="Hibernate"> Hibernate
+    <input type="checkbox" name="frameworks" value="Maven"> Maven
+    <input type="checkbox" name="frameworks" value="Angular"> Angular
+
+
     <input type="submit" value="Submit">
 </form>
 
