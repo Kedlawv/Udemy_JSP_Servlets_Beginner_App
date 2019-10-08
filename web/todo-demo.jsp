@@ -26,7 +26,7 @@
     }
 
     String theItem = request.getParameter("theItem");
-    if(theItem != null){
+    if(theItem != null && !theItem.isEmpty()){
         items.add(theItem);
     }
 %>
