@@ -18,6 +18,7 @@
     String[] cities = {"Warszawa","Poznan","Rzeszow"};
 
     pageContext.setAttribute("myCities",cities);
+
 %>
 
 <c:forEach var = "loopItem" items="${myCities}">
