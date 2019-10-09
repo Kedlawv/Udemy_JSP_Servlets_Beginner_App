@@ -6,6 +6,7 @@
 
   <h1>Tag Demo</h1>
   <a href="tag_demo/test.jsp"><h2>Tag Test</h2></a>
+  <a href="tag_demo/foreach-simple-test.jsp"><h2>For-each Test</h2></a>
 
   <hr>
   <h1>JSP Demo</h1>
