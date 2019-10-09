@@ -1,11 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Udemy_JSP_Servlets_Beginner_App:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="Udemy_JSP_Servlets_Beginner_App:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Udemy_JSP_Servlets_Beginner_App_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="Udemy_JSP_Servlets_Beginner_App/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Udemy_JSP_Servlets_Beginner_App" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.2" />
         </element>
       </element>
     </root>
