@@ -13,12 +13,12 @@
 
 <%
     List<Student> data = new ArrayList<>();
-    data.add(new Student("John","Doe",false));
-    data.add(new Student("Maxwell","Johnson",false));
+    data.add(new Student("John", "Doe", false));
+    data.add(new Student("Maxwell", "Johnson", false));
     data.add(new Student("Mary", "Public", true));
 
     String test = data.get(0).getFirstName();
-    pageContext.setAttribute("myStudents",data);
+    pageContext.setAttribute("myStudents", data);
 
 %>
 <html>
@@ -34,15 +34,24 @@
         <th>Gold Customer</th>
     </tr>
 
-<!--   for(<T> student : myStudents)-->
-<c:forEach var="student" items="${myStudents}">
-<%--    behind the scenes JSP EL (expression language) will call getters for the variables--%>
-    <tr>
-        <td> ${student.firstName}</td>
-        <td>${student.lastName}</td>
-        <td>${student.goldCustomer}</td>>
-    </tr>
-</c:forEach>
+    <!--   for(<T> student : myStudents)-->
+    <c:forEach var="student" items="${myStudents}">
+        <%--    behind the scenes JSP EL (expression language) will call getters for the variables--%>
+        <tr>
+            <td> ${student.firstName}</td>
+            <td>${student.lastName}</td>
+            <td>
+                <c:if test="${student.goldCustomer}">
+                    Special Discount
+                </c:if>
+
+                <c:if test="${not student.goldCustomer}">
+                    Standard Price
+                </c:if>
+            </td>
+            >
+        </tr>
+    </c:forEach>
 
 </table>
 </body>
