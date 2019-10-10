@@ -31,7 +31,8 @@
     <tr>
         <th>First Name</th>
         <th>Last Name</th>
-        <th>Gold Customer</th>
+        <th>Gold Customer if</th>
+        <th>Gold Customer choose</th>
     </tr>
 
     <!--   for(<T> student : myStudents)-->
@@ -49,7 +50,17 @@
                     Standard Price
                 </c:if>
             </td>
-            >
+            <td>
+                <c:choose>
+                    <c:when test="${student.goldCustomer}">
+                        Yes
+                    </c:when>
+
+                    <c:otherwise>
+                        No
+                    </c:otherwise>
+                </c:choose>
+            </td>
         </tr>
     </c:forEach>
 
