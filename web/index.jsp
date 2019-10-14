@@ -4,7 +4,9 @@
   </head>
   <body>
 
-  <h1>i18n</h1>
+  <h1>Servlets</h1>
+  <a href="hello-servlet"><h2>Hello Servlet Demo</h2></a>
+  <a href="servlet-demo/student-form.html"><h2>Student form to servlet</h2></a>
 
 
   <h1>Tag Demo</h1>
@@ -14,6 +16,7 @@
   <a href="tag_demo/function-test.jsp"><h2>Function test</h2></a>
   <a href="tag_demo/split-join-test.jsp"><h2>Split-Join test</h2></a>
   <a href="tag_demo/i18n-messages-test.jsp"><h2>i18n Messages test</h2></a>
+
 
   <hr>
   <h1>JSP Demo</h1>
