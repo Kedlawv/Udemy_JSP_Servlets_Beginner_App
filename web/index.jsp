@@ -5,6 +5,7 @@
   <body>
 
   <h1>Servlets</h1>
+  <a href="mvc-demo-servlet"><h2>MVC Demo Servlet</h2></a>
   <a href="hello-servlet"><h2>Hello Servlet Demo</h2></a>
   <a href="servlet-demo/student-form.html"><h2>Student form to servlet</h2></a>
   <a href="test-param-servlet"><h2>Read servlet parameters</h2></a>
